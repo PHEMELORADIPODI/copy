@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      background-color: darkgray;
+      margin: 1%;
+    }
+
+    header {
+      background-color: black;
+      padding: 1%;
+    }
+
+    aside {
+      background-color: aqua;
+      float: left;
+      margin: 1%;
+      width: 15%;
+      height: auto;
+    }
+
+    article {
+      background-color: beige;
+      margin: 1%;
+      float: right;
+      width: 81%;
+      height: fit-content;
+      position: relative; /* Ensure positioning context */
+    }
+
+    footer {
+      background-color: blue;
+      margin: 1%;
+      clear: both;
+    }
+    .sidenav {
+    height: 70%;
+    width: 100%;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+.topnav {
+    overflow: hidden;
+    background-color: darkgrey;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.topnav a.active {
+    background-color: red;
+    color: white;
+}
+
+.topnav input[type=text] {
+    float: right;
+    padding: 6px;
+    margin-top: 8px;
+    margin-right: 16px;
+    border: none;
+    font-size: 17px;
+}
+
+    .banner-image {
+    width: 100%;
+    height: auto;
+     }
+
+    .grid-container {
+        padding-left: 01%;
+        padding-right: 1%;
+        padding-bottom: 2%;
+        padding-top: 2%;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); /* 4 columns */
+      grid-gap: 2%;
+      width: 100%; /* Gap between grid items */
+      height: auto; /* Adjust height as needed */
+    }
+
+    .container {
+        border:thin solid #777;
+      position: relative;
+      width: 100%;
+       /* Each container takes up 100% width of its grid cell */
+    }
+
+    .image {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    .overlay {
+      position:absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height:100%;
+      width: 100%;
+      opacity: 0;
+      transition: .25s ease;
+      background-color:rgba(226, 7, 7, 0.622);
+      
+
+    }
+
+    .container:hover .overlay {
+      opacity: 1;
+    }
+
+    .text {
+      color: white;
+      font-size: 100%;
+      font-style: italic;
+      position:absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+
+    /* Styles for the responsive image gallery */
+    .gallery {
+      border: 1px solid #ccc;
+      overflow: hidden; /* Ensure images don't overflow */
+    }
+
+    .gallery:hover {
+      border: 1px solid #777;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: auto;
+    }
+
+    .desc {
+      padding: 15px;
+      text-align: center;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    .responsive {
+      padding: 0 6px;
+      float: left;
+      width: 24.99999%;
+    }
+
+    @media only screen and (max-width: 700px) {
+      .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+      }
+    }
+
+    @media only screen and (max-width: 500px) {
+      .responsive {
+        width: 100%;
+      }
+    }
+
+    .clearfix::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  </style>
+</head>
+<body>
+  <header>
+  
+    <img class="banner-image" src="img (3).png" alt="Banner Image">
+
+    <div class="topnav">
+        <a class="active" href="#home">Home</a>
+        <a href="P&S.html"> Products & Services</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+        <input type="text" placeholder="Search..">
+      </div>
+    
+
+    
+  </header>
+
+  <aside>
+      <div class="sidenav">
+        <h4 style="color: white;">MARKETS</h4>
+        <a href="index (2).HTML">European </a>
+        <a href="jdm market.html">Japanese </a>
+     </div>
+    
+  </aside>
+
+  <article>
+    <h3>FORD</h3>
+    <div class="grid-container">
+      <div class="container">
+        <p>FORD F150 2023</p>
+        <img src="IMAGES4.webp" alt="Avatar" class="image">
+        <h5>MSRP:$83 460 <button class="btn">BUY</button></h5>
+        <div class="overlay">
+          <div class="text">
+            <P>Engine	:5.2L supercharged V8.</P>
+              <P> Top speed :180km/hr </P>
+                <P>Horsepower :700hp</P>
+                 <P>Drivetrain :AWD </P>
+           
+          </div>
+        </div>
+      </div>
+
+
+      <div class="container">
+        <p>2024 FORD MUSTANG DARKHOUSE</p>
+        <img src="Dark_Horse.jpg" alt="Avatar" class="image">
+        <h5>MSRP:$118 795 <button class="btn">BUY</button></h5>
+        <div class="overlay">
+          <div class="text">
+            <p>Engine: V8 5.0L</p>
+            <p>Top speed: 257km/hr</p>
+            <p>Horsepower: 500hp</p>
+            <p>Drivetrain: RWD</p>
+            <h5>MSRP:$60 865<button class="btn">BUY</button></h5>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <p>1967 FORD MUSTANG ELEANOR</p>
+        <img src="GT500-eleanor.jpg" alt="Avatar" class="image">
+        <div class="overlay">
+          <div class="text">
+            <p>Engine	:427 V8 </p>
+            <p>Top speed :217km/hr</p>
+            <p>Horsepower :546hp</p>
+            <p>Drivetrain: RWD</p>
+            <h5>MSRP:$224 823<button class="btn">BUY</button></h5>
+          </div>
+        </div>
+      </div>
+
+      
+    </div>
+
+    
+    <div class="grid-container">
+      <div class="container">
+        <p>FORD GT40</p>
+        <img src="GT40.jpg" alt="Avatar" class="image">
+        <div class="overlay">
+          <div class="text">
+            <p>Engine	:7.0L V-8</p>
+            <p>Top speed :206km/hr </p>
+            <p>Horsepower :492hp</p>
+            <p>Drivetrain: RWD</p>
+            <h5>MSRP:$1 458 300<button class="btn">BUY</button></h5>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="container">
+        <p>GT40 2020</p>
+        <img src="FGT40.jpg" alt="Avatar" class="image">
+        <div class="overlay">
+          <div class="text">
+            <p>Engine: 3.5L Twin-Turbo V6</p>
+            <p>Top speed: 206km/hr</p>
+            <p>Horsepower: 660hp</p>
+            <p>Drivetrain: RWD</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <h3>DODGE</h3>
+  <div class="grid-container">
+    <div class="container">
+      <p>2021 DODGE CHALLENGER</p>
+      <img src="dodge-challenger_.jpg" alt="Avatar" class="image">
+      <div class="overlay">
+        <div class="text">
+          <p>Engine:3.6-liter V6 </p>
+          <p>Top speed: 261km/hr</p>
+          <p>Horsepower: 303hp</p>
+          <p>Drivetrain: RWD</p>
+          <h5>MSRP:$76 590 <button class="btn">BUY</button></h5>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container">
+      <p>2010 DODGE CHARGER</p>
+      <img src="dodge-chARGER.jpg" alt="Avatar" class="image">
+      <div class="overlay">
+        <div class="text">
+          <p>Engine:supercharged 6.2-liter V-8 </p>
+          <p>Top speed: 327km/hr</p>
+          <p>Horsepower: 717hp</p>
+          <p>Drivetrain: RWD</p>
+          <h5>MSRP:$32 645 <button class="btn">BUY</button></h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <p>2024 DODGE EV BANSHEE</p>
+      <img src="BANSHEE.jpg" alt="Avatar" class="image">
+      <div class="overlay">
+        <div class="text">
+          <p>Engine:ELECTRIC</p>
+          <p>Top speed:N/A</p>
+          <p>Horsepower: 880hp</p>
+          <p>Drivetrain: EV</p>
+          <h5>MSRP:$118 795 <button class="btn">BUY</button></h5>
+        </div>
+      </div>
+    </div>
+  
+
+    <div class="container">
+      <p>2019 DODGE RAM</p>
+      <img src="RAM.jpg" alt="Avatar" class="image">
+      <div class="overlay">
+        <div class="text">
+          <p>Engine	: 6.2-liter supercharged V-8 </p>
+          <p>Top speed: 190km/hr</p>
+          <p>Horsepower: 702hp</p>
+          <p>Drivetrain: AWD</p>
+          <h5>MSRP:$98 335 <button class="btn">BUY</button></h5>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container">
+      <p>CHARGER 1970</p>
+      <img src="CHARGER.jpg" alt="Avatar" class="image">
+      <div class="overlay">
+        <div class="text">
+          <p>Engine:426 V-8 HEMI</p>
+          <p>Top speed: 221km/hr</p>
+          <p>Horsepower: 425hp</p>
+          <p>Drivetrain: RWD</p>
+          <h5>MSRP:$85 525<button class="btn">BUY</button></h5>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <h3>CHEVROLET</h3>
+  <div class="grid-container">
+    <div class="container">
+      <p>2019 CHEVROLET C7</p>
+      <img src="C7.jpg" alt="Avatar" class="image">
+      <div class="overlay">
+        <div class="text">
+          <p>Engine: 6.2L Small Block V-8</p>
+          <p>Top speed: 346km/hr</p>
+          <p>Horsepower: 460hp</p>
+          <p>Drivetrain: RWD</p>
+          <h5>MSRP:$56 995 <button class="btn">BUY</button></h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <p>2022 CHEVROLET C8</p>
+      <img src="z06-c8-.jpg" alt="Avatar" class="image">
+      <div class="overlay">
+        <div class="text">
+          <p>Engine: naturally aspirated 6.2 L V8</p>
+          <p>Top speed: 320km/hr</p>
+          <p>Horsepower: 490hp</p>
+          <p>Drivetrain: RWD</p>
+          <h5>MSRP:$ 69 995<button class="btn">BUY</button></h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <p>2018 CHEVROLET CAMARO SS</p>
+      <img src="ZL1-1LE-.jpg" alt="Avatar" class="image">
+      <div class="overlay">
+        <div class="text">
+          <p>Engine: naturally aspirated 6.2 L V8</p>
+          <p>Top speed: 320km/hr</p>
+          <p>Horsepower: 490hp</p>
+          <p>Drivetrain: RWD</p>
+          <h5>MSRP:$ 69 995<button class="btn">BUY</button></h5>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+  </div>
+    
+
+
+
+
+  </article>
+  <footer>
+    footer
+  </footer>
+</body>
+</html>
+

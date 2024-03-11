@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.grid-container {
+  padding-left: 1%;
+  padding-right: 1%;
+  padding-bottom: 2%;
+  padding-top: 2%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 4 columns */
+  grid-gap: 2%;
+  width: 100%; /* Gap between grid items */
+  height: auto; /* Adjust height as needed */
+}
+
+.container {
+  border: thin solid #777;
+  position: relative;
+  width: 100%;
+  /* Each container takes up 100% width of its grid cell */
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.container1 {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+
+.top-right {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
+
+.bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+</style>
+</head>
+<body>
+
+<h2>Image Text</h2>
+<p>How to place text over an image:</p>
+
+<div class="container">
+  <h3>cyugvjfjcyugkjh</h3>
+  <div class="container">
+  <img src="acr.jpg" alt="Snow" style="width:100%;">
+  <div class="top-right"><img src="firer.png"width="25px" height="25px"></div>
+</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+ <html>
+    <head>
+      <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPEEDSTARS MOTORS</title>
+     <style>
+        body{
+           
+
+        }
+        header{
+            background-color:black;
+            padding: 1%;
+
+
+        }
+        
+        aside{
+            float: left;
+            margin: 1%;
+            width: 22%;
+            height: auto;
+
+        }
+        article{
+            background-color: beige;
+            margin: 1%;
+            float: right;
+            width: 74%;
+            height: fit-content;
+
+        }
+        footer{
+            background-color: blue;
+            margin: 1%;
+            clear: both;
+
+        }
+
+        .topnav {
+        overflow: hidden;
+        background-color:darkgrey;
+        }
+
+         .topnav a {
+          float: left;
+          display: block;
+          color: black;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+          font-size: 17px;
+           }
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color:red;
+  color: white;
+}
+
+.topnav input[type=text] {
+  float: right;
+  padding: 6px;
+  margin-top: 8px;
+  margin-right: 16px;
+  border: none;
+  font-size: 17px;
+}
+
+
+
+.sidenav {
+            height: 70%;
+           width: 100%;
+           z-index: 1;
+           top: 0;
+           left: 0; 
+            background-color: #111;
+            overflow-x: hidden;
+            padding-top: 20px;
+        }
+
+        .sidenav a {
+           padding: 6px 8px 6px 16px ;
+         text-decoration: none;
+         font-size: 20px;
+         color: #818181;
+         display: block;
+        }
+
+        .sidenav a:hover {
+         color: #f1f1f1;
+         }
+
+         
+
+.grid-container {
+  border:thick #111;
+  padding-left: 5%;
+    display: grid;
+    grid-template-columns: repeat(4, 20.25%); 
+    grid-gap: 5%;
+}
+
+
+.grid-item {
+  border:thick solid #111;
+    width: 100%;
+}
+
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+    </style>
+    </head>
+<body>
+
+    
+      <header role="banner"> 
+
+        <h1> <img src="img (3).png"> </h1> 
+      
+        header
+        
+        
+        <div class="topnav">
+            <a class="active" href="#home">Home</a>
+            <a href="P&S.html"> Products & Services</a>
+            <a href="#contact">Contact</a>
+            <a href="#about">About</a>
+            <input type="text" placeholder="Search..">
+          </div>
+        
+    </header>
+
+    <aside>
+      <div class="sidenav">
+        <h4 style="color: white;">SEARCH BY MANUFACTURE</h4>
+        <a href="index (2).HTML">European Manufacturers</a>
+        <a href="jdm market.html">Japanese  Manufacturers</a>
+        <a href="P&S.html"> Products & Services</a>
+        <a href="">About</a>
+      </div>
+     </aside>
+
+    <article>
+      <h2>SHOWROOM</h2>
+     
+        <div class="grid-container">
+          <div class="container">
+        <div class="grid-item">
+            <p>VOLKSWAGEN GOLF 5</p>
+            
+            <img src="img (10).jpg" alt="vw golf 5" >
+            <h5>MSRP:P67 000 <button class="btn">BUY</button></h5>
+        </div>
+        <div class="overlay">
+          <div class="text">Hello World</div>
+        </div>
+        </div>
+      </div>
+        
+        <div class="grid-item">
+          <p>VOLKSWAGEN GOLF 5</p>
+          
+          <img src="img (10).jpg" alt="vw golf 5" >
+          <h5>MSRP:P67 000 <button class="btn">BUY</button></h5>
+      </div>
+      
+      <div class="grid-item">
+        <p>VOLKSWAGEN GOLF 5</p>
+        
+        <img src="img (10).jpg" alt="vw golf 5" >
+        <h5>MSRP:P67 000 <button class="btn">BUY</button></h5>
+    </div>
+    
+    <div class="grid-item">
+      <p>VOLKSWAGEN GOLF 5</p>
+      
+      <img src="img (10).jpg" alt="vw golf 5" >
+      <h5>MSRP:P67 000 <button class="btn">BUY</button></h5>
+  </div>
+  
+  <div class="grid-item">
+    <p>VOLKSWAGEN GOLF 5</p>
+    
+    <img src="img (10).jpg" alt="vw golf 5" >
+    <h5>MSRP:P67 000 <button class="btn">BUY</button></h5>
+</div>
+
+
+        
+          
+    
+
+        
+      
+
+       
+            </div>
+              
+    </article>
+    <footer>copyrights</footer>
+
+</body>
+
+
+
+
+
+
+</html>
